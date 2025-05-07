@@ -1,0 +1,7 @@
+{
+  "name": "flashcards",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

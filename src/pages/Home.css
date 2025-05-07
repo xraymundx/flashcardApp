@@ -1,0 +1,62 @@
+/* General layout */
+body {
+    background-color: #f0f8ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  /* Title style */
+  ion-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3b3b98;
+  }
+  
+  /* Centering the card */
+  .flashcard {
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover effect on card */
+  .flashcard:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Input field styling */
+  ion-input {
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 12px;
+  }
+  
+  /* Button style */
+  ion-button {
+    --background: #3b3b98;
+    --background-activated: #575fcf;
+    --color: white;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  /* Funny gif styling */
+  ion-img {
+    margin-top: 20px;
+    max-height: 180px;
+    border-radius: 12px;
+  }
+  
+  /* Alert pop-up style (optional override) */
+  .alert-wrapper {
+    font-size: 1rem;
+    color: #333;
+  }
+  
