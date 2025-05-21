@@ -65,7 +65,7 @@ const App: React.FC = () => {
               <IonInput
                 placeholder="Your answer here"
                 value={userAnswer}
-                onIonChange={(e) => setUserAnswer(e.detail.value!)}
+                onIonInput={(e) => setUserAnswer((e.target as HTMLInputElement | any).value || e.detail?.value || '')}
                 disabled={isLocked}
               />
               <IonButton expand="block" className="ion-margin-top" onClick={checkAnswer} disabled={isLocked}>
@@ -86,7 +86,6 @@ const App: React.FC = () => {
         ) : (
           <div className="flashcard-center">
             <h2 className="flashcard-complete-message">Well done! You finished all flashcards.</h2>
-            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2Z2d2Z2d3F2d3F2d3F2d3F2d3F2d3F2d3F2d3F2d3F2d3F2/g9582DNuQppxC/giphy.gif" alt="Celebration" style={{ width: '180px', marginBottom: '20px' }} />
             <IonButton color="secondary" onClick={() => {
               setCurrentIndex(0);
               setUserAnswer('');
