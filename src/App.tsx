@@ -84,9 +84,10 @@ const App: React.FC = () => {
             </IonCardContent>
           </IonCard>
         ) : (
-          <>
-            <h2>Well done! You finished all flashcards.</h2>
-            <IonButton expand="block" color="secondary" onClick={() => {
+          <div className="flashcard-center">
+            <h2 className="flashcard-complete-message">Well done! You finished all flashcards.</h2>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2Z2d2Z2d3F2d3F2d3F2d3F2d3F2d3F2d3F2d3F2d3F2d3F2/g9582DNuQppxC/giphy.gif" alt="Celebration" style={{ width: '180px', marginBottom: '20px' }} />
+            <IonButton color="secondary" onClick={() => {
               setCurrentIndex(0);
               setUserAnswer('');
               setWrongAttempts(0);
@@ -94,7 +95,7 @@ const App: React.FC = () => {
             }}>
               Restart
             </IonButton>
-          </>
+          </div>
         )}
 
         <IonAlert

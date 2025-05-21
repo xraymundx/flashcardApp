@@ -59,4 +59,17 @@ body {
     font-size: 1rem;
     color: #333;
   }
-  
+
+  /* Centering completion message and button */
+.flashcard-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.flashcard-complete-message {
+  margin-bottom: 24px;
+  text-align: center;
+}
